@@ -5,7 +5,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'nuc'
+  vmImage: 'Coverity202103'
 
 steps:
 
