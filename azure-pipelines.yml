@@ -5,8 +5,9 @@ trigger:
 - master
 
 pool:
-  vmImage: 'MyAgentPool'
-
+  name: MyAgentPool
+  demands:
+   - agent.name -equals nuc
 steps:
 
 - task: CmdLine@2
