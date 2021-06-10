@@ -5,8 +5,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
-  environment: 'Coverity202103'
+  vmImage: 'default'
 
 steps:
 
