@@ -15,39 +15,9 @@ steps:
      SRM_URL: $(SRM_URL)
      SRM_APIKEY: $(SRM_APIKEY)
      SRM_ASSESSMENT_TYPES: "SCA,SAST"
-     SRM_PROJECT_NAME: $(Build.Repository.Name)
-     
-     ## Project id in SRM Server
-     ### Uncomment below configuration if SRM_PROJECT_NAME didn't specified
-     # SRM_PROJECT_ID: $(SRM_PRJECT_ID)
-  
-     ## Branch name in the SRM Server  
-     SRM_BRANCH_NAME: $(SRM_BRANCH_NAME)
-     ## Parent Branch name in SRM server
-     SRM_BRANCH_PARENT: $(SRM_BRANCH_PARENT) 
-     # SRM_WAITFORSCAN: false   # Used to support the async mode
+###     SRM_PROJECT_NAME: $(Build.Repository.Name)
 
-     ## Path to Coverity CLI
-     COVERITY_EXECUTION_PATH : "/Users/johndoe/bridge-install-dir/srm-coverity/cov-thin-client-macosx-2023.6.1/bin/coverity"
-     ## Path to the Black Duck Detect jar file to use
-     DETECT_EXECUTION_PATH: "/Users/johndoe/bridge-install-dir/srm-blackduck/tools/blackduck-detect/10.0.0/detect-10.0.0.jar"
 
-     # PROJECT_DIRECTORY: "$(PROJECT_DIRECTORY)"
-    
-     ### Coverity (SAST) Tool Settings
-     # COVERITY_CLEAN_COMMAND: 'mvn clean'
-     # COVERITY_BUILD_COMMAND: 'mvn clean install'
-     # COVERITY_ARGS: '--config-override capture.build.build-command=mvn install'
-     # COVERITY_CONFIG_PATH: /Users/tmp/coverity.yml
-    
-     ### Detect Tool Settings
-     # DETECT_SEARCH_DEPTH: 2
-     # DETECT_ARGS: '--detect.diagnostic=true'
-     # DETECT_CONFIG_PATH: '/Users/tmp/application.properties'
-    
-     ### Uncomment below configuration if Bridge diagnostic files needs to be uploaded
-     # INCLUDE_DIAGNOSTICS: 'true'
-   
 ### Uncomment below configuration to add custom logic based on return status    
 # - task: CmdLine@2
 #   displayName: 'Command Line'
