@@ -9,7 +9,7 @@ variables:
   
 steps:
 - task: JavaToolInstaller@0
-  displayName: 'Use Java 17'
+  displayName: 'Get Java 17 and Maven to use in pipeline'
   inputs:
     versionSpec: 17
     jdkArchitectureOption: x64
