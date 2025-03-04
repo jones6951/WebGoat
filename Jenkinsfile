@@ -25,12 +25,5 @@ pipeline {
                     srm_branch_name: "$BRANCH_NAME"
             }
         }
-            
-            
-            steps {
-                security_scan product: 'blackducksca',
-                    include_diagnostics: false
-            }
-        }
     }
 }
