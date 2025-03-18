@@ -21,7 +21,7 @@ steps:
   inputs:
      SRM_URL: $(SRM_URL)
      SRM_APIKEY: $(SRM_APIKEY)
-     SRM_ASSESSMENT_TYPES: "SCA,SAST"
+     SRM_ASSESSMENT_TYPES: "SAST"
 ###     SRM_PROJECT_NAME: $(Build.Repository.Name)
 
 
